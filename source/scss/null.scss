@@ -1,0 +1,51 @@
+
+/*очищаю все отступы и границы*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+/* меняю модель подсчета ширины блока  */
+*,*::after,*::before{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*убираю линии обводки при наведении на єлементы и ссылки
+в некоторых браузерах*/
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+/*делаю некоторые теги явно блочными*/
+
+nav,footer,header,aside{display: block;}
+
+/*Уравнивают поведение шрифтов для разных браузерах*/
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/*принуждаем наследовать семейство шрифта и цвет шрифта*/
+a,input,button,textarea{font-family: inherit;color:inherit;}
+
+input::-ms-clear{display: none;}/*для старых интернет-эксплореров убирает крестик в
+углу поля ввода инпута, если внутрь него введен текст*/
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;bottom: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
