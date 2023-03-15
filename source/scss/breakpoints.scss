@@ -1,12 +1,39 @@
 /*------------HEADER---------------*/
 
-@media (max-width: 1092px) {
+
+@media (max-width: 1098.98px) {
 }
 
 
 @media(max-width: 767.98px){
+    body{
+        font-size: 16px;
+    }
+    //HEADER
+    .header{
+        &__row{
+            grid-template-columns: 2fr 1fr 2fr;
+            grid-template-areas: 
+                "header__logo header__cart header__button"
+                "header__nav header__nav header__nav"
+            ;
+            grid-row-gap: 20px
+        }
+        &__nav{
+            justify-content: center;
+            font-size: 1.75rem;
+        }
+        &__list{
+            margin-right: 0;
+        }
+    }
 }
 
-@media(max-width:479.98){
-
+@media(max-width:479.98px){
+//HEADER
+.header{
+    &__list{
+        display: none;
+    }
+}
 }

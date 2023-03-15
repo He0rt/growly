@@ -6,13 +6,18 @@ body {
     font-family: Poppins;
     font-weight: 300;
     background: #0d0d11;
+    font-size: 14px;
 }
 .wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
+    position: relative;
+    height: 3000px; // для пробы position: fixed
 }
 .header {
+    position: fixed;
+    width: 100%;
 }
 .main {
     flex: 1 1 auto;
@@ -21,7 +26,7 @@ body {
 }
 
 [class*="__container"] {
-    min-width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -42,13 +47,13 @@ body {
 }
 .cart {
     font-weight: 300;
-    font-size: 17.6px;
+    font-size: 1.26rem;
     line-height: 160%;
     letter-spacing: 0.96px;
     color: #ffffff;
     &__counter {
         font-weight: 500;
-        font-size: 14px;
+        font-size: 1rem;
         line-height: 100%;
         text-align: center;
         letter-spacing: 0.96px;
@@ -59,7 +64,7 @@ body {
     background: #3d96f4;
     border-radius: 50px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 22px;
     text-align: center;
     letter-spacing: 2px;
@@ -68,7 +73,9 @@ body {
     height: 52px;
     padding: 16px 29px;
 }
-
+.display-none {
+    display: none;
+}
 //HEADER
 .header {
     &__conrainer {
@@ -80,10 +87,12 @@ body {
         grid-template-columns: 1fr 2fr 0.5fr 0.5fr;
         grid-template-rows: 116px;
         justify-content: end;
+        grid-template-areas: "header__logo header__nav header__cart header__button";
     }
-    .header__logo-container{
+    &__logo-container {
         display: flex;
         align-items: center;
+        grid-area: header__logo;
     }
     &__logo {
         width: 148px;
@@ -92,24 +101,28 @@ body {
 
     &__nav {
         font-weight: 300;
-        font-size: 16px;
+        font-size: 1.15rem;
         line-height: 26px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        grid-area: header__nav;
+    }
+
+    &__burger {
+    
     }
 
     &__list {
         display: flex;
         justify-content: flex-end;
         margin-right: 36px;
-        align-items: center;    
+        align-items: center;
     }
 
     &__list-item {
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-right: 35px;
-            
         }
     }
 
@@ -121,7 +134,9 @@ body {
     &__cart {
         display: flex;
         align-items: center;
-        span{
+        grid-area: header__cart;
+        span {
+            margin-left: 5px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -129,19 +144,31 @@ body {
             height: 30px;
             border-radius: 50%;
             background: rgba(129, 129, 139, 0.3);
-            
         }
     }
-    .header__button-container{
+    &__button-container {
         display: flex;
         justify-content: center;
         align-items: center;
+        grid-area: header__button;
     }
     &__button {
-
+    }
 }
+
+.footer {
 }
 
 /*-------МЕДИАЗАПРОСЫ-------*/
 @import "breakpoints.scss";
 /*ОСТАВЛЯТЬ ЭТО ВСЕ В САМОМ НИЗУ*/
+
+/*
+.icon-facebook:before { content: '\e800'; } 
+.icon-cross:before { content: '\e801'; } 
+.icon-instagramm:before { content: '\e802'; } 
+.icon-linkedin:before { content: '\e803'; } 
+.icon-twitter:before { content: '\e804'; } 
+.icon-youtube:before { content: '\e805'; } 
+.icon-burger:before { content: '\e806'; } 
+*/
