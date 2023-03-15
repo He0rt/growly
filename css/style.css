@@ -292,15 +292,6 @@ body {
 .header__burger:hover {
   background: url("../img/icons/burger__hover.svg") 0px 0px/contain no-repeat;
 }
-.header__cross {
-  display: none;
-  width: 30px;
-  height: 30px;
-  background: url("../img/icons/cross.svg") 0px 0px/contain no-repeat;
-}
-.header__cross:hover {
-  background: url("../img/icons/cross__hover.svg") 0px 0px/contain no-repeat;
-}
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,6 +314,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.header__link:hover {
+  text-decoration: underline;
 }
 .header__cart {
   -ms-grid-row: 1;
@@ -365,6 +359,46 @@ body {
           align-items: center;
   grid-area: header__button;
 }
+.header__pop-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.header__pop-up .header__list {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.header__pop-up .header__list-item {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 26px;
+  color: #ffffff;
+  margin: 0;
+}
+.header__pop-up .header__cross {
+  width: 30px;
+  height: 30px;
+  background: url("../img/icons/cross.svg") 0px 0px/contain no-repeat;
+}
+.header__pop-up .header__cross:hover {
+  background: url("../img/icons/cross__hover.svg") 0px 0px/contain no-repeat;
+}
+
 /*-------МЕДИАЗАПРОСЫ-------*/
 /*------------HEADER---------------*/
 @media (max-width: 767.98px) {

@@ -111,22 +111,12 @@ body {
     }
 
     &__burger {
-        display: none;  //удалить , если буду делать бургер JS-ом
+        display: none;
         width: 40px;
         height: 40px;
-        background : url('../img/icons/burger.svg') 0px 0px/contain no-repeat;
-        &:hover{
-            background : url('../img/icons/burger__hover.svg') 0px 0px/contain no-repeat;
-        }
-    }
-
-    &__cross{
-        display: none;  //удалить , если буду делать бургер JS-ом
-        width: 30px;
-        height: 30px;
-        background : url('../img/icons/cross.svg') 0px 0px/contain no-repeat;
-        &:hover{
-            background : url('../img/icons/cross__hover.svg') 0px 0px/contain no-repeat;
+        background: url("../img/icons/burger.svg") 0px 0px / contain no-repeat;
+        &:hover {
+            background: url("../img/icons/burger__hover.svg") 0px 0px / contain no-repeat;
         }
     }
 
@@ -146,6 +136,9 @@ body {
     &__link {
         display: flex;
         align-items: center;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__cart {
@@ -171,6 +164,38 @@ body {
     }
     &__button {
     }
+}
+
+.header__pop-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .header__list {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+    }
+    .header__list-item {
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 26px;
+        color: #ffffff;
+        margin: 0;
+    }
+    .header__cross {
+        width: 30px;
+        height: 30px;
+        background: url("../img/icons/cross.svg") 0px 0px / contain no-repeat;
+        &:hover {
+            background: url("../img/icons/cross__hover.svg") 0px 0px / contain no-repeat;
+        }
+    }
+}
+пше
+.header__link {
 }
 
 .footer {
