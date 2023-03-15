@@ -79,6 +79,7 @@ body {
 //HEADER
 .header {
     &__conrainer {
+        position: relative;
     }
 
     &__row {
@@ -110,7 +111,23 @@ body {
     }
 
     &__burger {
-    
+        display: none;  //удалить , если буду делать бургер JS-ом
+        width: 40px;
+        height: 40px;
+        background : url('../img/icons/burger.svg') 0px 0px/contain no-repeat;
+        &:hover{
+            background : url('../img/icons/burger__hover.svg') 0px 0px/contain no-repeat;
+        }
+    }
+
+    &__cross{
+        display: none;  //удалить , если буду делать бургер JS-ом
+        width: 30px;
+        height: 30px;
+        background : url('../img/icons/cross.svg') 0px 0px/contain no-repeat;
+        &:hover{
+            background : url('../img/icons/cross__hover.svg') 0px 0px/contain no-repeat;
+        }
     }
 
     &__list {

@@ -32,8 +32,19 @@
 @media(max-width:479.98px){
 //HEADER
 .header{
-    &__list{
+    &__row{
+        grid-row-gap: 0;
+    }
+    &__nav{
+        justify-content: flex-end;
+        margin-right: 15px;
+    }
+    &__list,&__cart{
         display: none;
+    }
+
+    &__burger{
+        display: block;
     }
 }
 }

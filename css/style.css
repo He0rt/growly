@@ -235,6 +235,9 @@ body {
   display: none;
 }
 
+.header__conrainer {
+  position: relative;
+}
 .header__row {
   color: #ffffff;
   display: -ms-grid;
@@ -279,6 +282,24 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   grid-area: header__nav;
+}
+.header__burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: url("../img/icons/burger.svg") 0px 0px/contain no-repeat;
+}
+.header__burger:hover {
+  background: url("../img/icons/burger__hover.svg") 0px 0px/contain no-repeat;
+}
+.header__cross {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background: url("../img/icons/cross.svg") 0px 0px/contain no-repeat;
+}
+.header__cross:hover {
+  background: url("../img/icons/cross__hover.svg") 0px 0px/contain no-repeat;
 }
 .header__list {
   display: -webkit-box;
@@ -385,8 +406,20 @@ body {
   }
 }
 @media (max-width: 479.98px) {
-  .header__list {
+  .header__row {
+    grid-row-gap: 0;
+  }
+  .header__nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 15px;
+  }
+  .header__list, .header__cart {
     display: none;
+  }
+  .header__burger {
+    display: block;
   }
 }
 /*ОСТАВЛЯТЬ ЭТО ВСЕ В САМОМ НИЗУ*/
