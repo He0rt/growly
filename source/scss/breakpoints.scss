@@ -46,5 +46,13 @@
     &__burger{
         display: block;
     }
+    &__pop-up{
+        left: 0%;
+        top:100%;
+        .header__cart{
+            display: flex;
+            font-size: 2rem;
+        }
+    }
 }
 }

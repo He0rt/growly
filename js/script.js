@@ -1,19 +1,22 @@
-function ibg() {
-    $.each($(".ibg"), function (i, n) {
-        $(this).find(img).length > 0 &&
-            $(this).css(
-                "background-image",
-                'url("' + $(this).find("img").attr("src") + '")'
-            );
-    });
-}
-$(".wrapper").addClass("loaded"),
-    $(".icon-menu").click(function (i) {
-        $(this).toggleClass("active"),
-            $(".menu__body").toggleClass("active"),
-            $("body").toogleClass("lock");
-    }),
-    ibg(),
-    $(document).ready(function () {
-        $(".slider-name").slick({});
-    });
+let popUp = document.querySelector(".header__pop-up");
+let burgerMenu = document.querySelector(".header__burger");
+let cross = document.querySelector(".header__cros");
+burgerMenu.addEventListener("click", () => {
+    popUp.classList.remove("display-none");
+    burgerMenu.classList.add("display-none");
+    cross.style.height = "30px";
+    cross.style.width = "30px";
+    cross.style.background = "orange";
+    cross.textContent = "X";
+    cross.style.fontSize = "30px";
+    cross.style.textAlign = "center";
+    cross.style.fontWeight = "900";
+    cross.classList.remove("display-none");
+});
+console.log(burgerMenu);
+
+cross.addEventListener('click', ()=>{
+    cross.classList.add("display-none");
+    popUp.classList.add("display-none");
+    burgerMenu.classList.remove("display-none");
+})

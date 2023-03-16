@@ -232,7 +232,7 @@ body {
 }
 
 .display-none {
-  display: none;
+  display: none !important;
 }
 
 .header__conrainer {
@@ -290,6 +290,7 @@ body {
   background: url("../img/icons/burger.svg") 0px 0px/contain no-repeat;
 }
 .header__burger:hover {
+  cursor: pointer;
   background: url("../img/icons/burger__hover.svg") 0px 0px/contain no-repeat;
 }
 .header__list {
@@ -360,6 +361,11 @@ body {
   grid-area: header__button;
 }
 .header__pop-up {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 3000%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,13 +396,8 @@ body {
   color: #ffffff;
   margin: 0;
 }
-.header__pop-up .header__cross {
-  width: 30px;
-  height: 30px;
-  background: url("../img/icons/cross.svg") 0px 0px/contain no-repeat;
-}
-.header__pop-up .header__cross:hover {
-  background: url("../img/icons/cross__hover.svg") 0px 0px/contain no-repeat;
+.header__pop-up .header__cros:hover {
+  cursor: pointer;
 }
 
 /*-------МЕДИАЗАПРОСЫ-------*/
@@ -454,6 +455,16 @@ body {
   }
   .header__burger {
     display: block;
+  }
+  .header__pop-up {
+    left: 0%;
+    top: 100%;
+  }
+  .header__pop-up .header__cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 2rem;
   }
 }
 /*ОСТАВЛЯТЬ ЭТО ВСЕ В САМОМ НИЗУ*/
