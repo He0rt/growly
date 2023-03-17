@@ -2,6 +2,24 @@
 
 
 @media (max-width: 1098.98px) {
+    //marketing
+    .marketing{
+        &__description{
+            padding-right: 10px;
+        }
+        &__photos{
+            flex: 0 1 40%;
+            padding: 0 10px;
+        }
+        &__links{
+            gap: 10px 10px
+        }
+    }
+    //common styles
+    .links{
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 
@@ -25,6 +43,16 @@
         }
         &__list{
             margin-right: 0;
+        }
+    }
+    //marketing
+    .marketing{
+        &__container{
+            margin-bottom: 50px;
+        }
+            &__columns{
+                flex-direction: column;
+                gap: 50px 0;
         }
     }
 }
@@ -53,6 +81,12 @@
             display: flex;
             font-size: 2rem;
         }
+    }
+}
+//marketing
+.marketing{
+    .photos{
+        gap: 10px;
     }
 }
 }

@@ -203,13 +203,15 @@ body {
 .header__pop-up {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 160%;
     top: 0%;
     left: 3000%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    z-index: 999;
+    background-color: #0D0D11;;
     .header__list {
         margin: 0;
         display: flex;
@@ -236,12 +238,13 @@ body {
 //marketing
 .main {
     &__marketing {
-        padding-top: 160px;
-        margin-bottom: 192px;
+
     }
 }
 .marketing {
     &__container {
+        padding-top: 173px;
+        margin-bottom: 192px;
     }
 
     &__columns {
@@ -287,6 +290,7 @@ body {
     &__photos {
         flex: 0 0 48%;
         padding: 0 27px 0 54px;
+        width: 100%;
     }
 }
 
@@ -298,7 +302,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 32px 0;
-
+        width: 100%;
     }
 
     &__oval-image {
@@ -314,6 +318,9 @@ body {
     &__image-2 {
         overflow: hidden;
         border-radius: 241.906px 0px 241.906px 241.906px;
+    }
+    *img{
+        width: 100%;
     }
 }
 
