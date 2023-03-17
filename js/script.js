@@ -1,3 +1,10 @@
+
+$(document).ready(function(){
+    $('.slider-companies').slick({
+        slidesToShow: 5,
+    });
+  });
+
 let popUp = document.querySelector(".header__pop-up");
 let burgerMenu = document.querySelector(".header__burger");
 let cross = document.querySelector(".header__cros");
@@ -13,7 +20,6 @@ burgerMenu.addEventListener("click", () => {
     cross.style.fontWeight = "900";
     cross.classList.remove("display-none");
 });
-console.log(burgerMenu);
 
 cross.addEventListener('click', ()=>{
     cross.classList.add("display-none");

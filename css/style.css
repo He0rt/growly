@@ -265,7 +265,7 @@ body {
   position: relative;
 }
 .header__row {
-  background-color: #0D0D11;
+  background-color: #0d0d11;
   overflow: hidden;
   z-index: 5;
   color: #ffffff;
@@ -408,7 +408,7 @@ body {
           align-items: center;
   gap: 20px;
   z-index: 999;
-  background-color: #0D0D11;
+  background-color: #0d0d11;
 }
 .header__pop-up .header__list {
   margin: 0;
@@ -520,6 +520,63 @@ body {
   width: 100%;
 }
 
+.companies__container {
+  margin-bottom: 160px;
+}
+.compamies__title {
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.slider-companies {
+  position: relative;
+  z-index: 1;
+}
+.slider-companies .slick-arrow {
+  z-index: 2;
+  font-size: 0;
+  background: transparent;
+}
+.slider-companies .slick-prev {
+  position: absolute;
+  width: 115px;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+}
+.slider-companies .slick-prev::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, #0d0d11), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, #0d0d11 8%, rgba(0, 0, 0, 0) 100%);
+}
+.slider-companies .slick-next {
+  position: absolute;
+  width: 115px;
+  height: 100%;
+  top: 0%;
+  right: 0%;
+}
+.slider-companies .slick-next::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background: -webkit-gradient(linear, right top, left top, color-stop(8%, #0D0D11), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(270deg, #0D0D11 8%, rgba(0, 0, 0, 0) 100%);
+}
+
 /*-------МЕДИАЗАПРОСЫ-------*/
 /*------------HEADER---------------*/
 @media (max-width: 1098.98px) {
@@ -528,8 +585,8 @@ body {
   }
   .marketing__photos {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 40%;
-            flex: 0 1 40%;
+        -ms-flex: 0 0 55%;
+            flex: 0 0 55%;
     padding: 0 10px;
   }
   .marketing__links {
@@ -622,12 +679,3 @@ body {
   }
 }
 /*ОСТАВЛЯТЬ ЭТО ВСЕ В САМОМ НИЗУ*/
-/*
-.icon-facebook:before { content: '\e800'; } 
-.icon-cross:before { content: '\e801'; } 
-.icon-instagramm:before { content: '\e802'; } 
-.icon-linkedin:before { content: '\e803'; } 
-.icon-twitter:before { content: '\e804'; } 
-.icon-youtube:before { content: '\e805'; } 
-.icon-burger:before { content: '\e806'; } 
-*/

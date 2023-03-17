@@ -1,92 +1,91 @@
 /*------------HEADER---------------*/
 
-
 @media (max-width: 1098.98px) {
     //marketing
-    .marketing{
-        &__description{
+    .marketing {
+        &__description {
             padding-right: 10px;
         }
-        &__photos{
-            flex: 0 1 40%;
+        &__photos {
+            flex: 0 0 55%;
             padding: 0 10px;
         }
-        &__links{
-            gap: 10px 10px
+        &__links {
+            gap: 10px 10px;
         }
     }
     //common styles
-    .links{
+    .links {
         flex-direction: column;
         text-align: center;
     }
 }
 
-
-@media(max-width: 767.98px){
-    body{
+@media (max-width: 767.98px) {
+    body {
         font-size: 16px;
     }
     //HEADER
-    .header{
-        &__row{
+    .header {
+        &__row {
             grid-template-columns: 2fr 1fr 2fr;
-            grid-template-areas: 
+            grid-template-areas:
                 "header__logo header__cart header__button"
-                "header__nav header__nav header__nav"
-            ;
-            grid-row-gap: 20px
+                "header__nav header__nav header__nav";
+            grid-row-gap: 20px;
         }
-        &__nav{
+        &__nav {
             justify-content: center;
             font-size: 1.75rem;
         }
-        &__list{
+        &__list {
             margin-right: 0;
         }
     }
     //marketing
-    .marketing{
-        &__container{
+    .marketing {
+        &__container {
             margin-bottom: 50px;
         }
-            &__columns{
-                flex-direction: column;
-                gap: 50px 0;
+        &__columns {
+            flex-direction: column;
+            gap: 50px 0;
         }
     }
 }
 
-@media(max-width:479.98px){
-//HEADER
-.header{
-    &__row{
-        grid-row-gap: 0;
-    }
-    &__nav{
-        justify-content: flex-end;
-        margin-right: 15px;
-    }
-    &__list,&__cart{
-        display: none;
-    }
+@media (max-width: 479.98px) {
+    //HEADER
+    .header {
+        &__row {
+            grid-row-gap: 0;
+        }
+        &__nav {
+            justify-content: flex-end;
+            margin-right: 15px;
+        }
+        &__list,
+        &__cart {
+            display: none;
+        }
 
-    &__burger{
-        display: block;
+        &__burger {
+            display: block;
+        }
+        &__pop-up {
+            left: 0%;
+            top: 100%;
+            .header__cart {
+                display: flex;
+                font-size: 2rem;
+            }
+        }
     }
-    &__pop-up{
-        left: 0%;
-        top:100%;
-        .header__cart{
-            display: flex;
-            font-size: 2rem;
+    //marketing
+    .marketing {
+        .photos {
+            gap: 10px;
         }
     }
 }
-//marketing
-.marketing{
-    .photos{
-        gap: 10px;
-    }
-}
-}
+
