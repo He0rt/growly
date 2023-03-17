@@ -13,7 +13,6 @@ body {
     flex-direction: column;
     height: 100%;
     position: relative;
-
 }
 .header {
     position: fixed;
@@ -26,9 +25,9 @@ body {
 }
 
 [class*="__container"] {
-    max-width: 1300px;
+    max-width: 1310px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 // COMMON STYLES
 .logo {
@@ -76,6 +75,33 @@ body {
 .display-none {
     display: none !important;
 }
+
+//links and they are blue + grey button
+.links {
+    display: flex;
+    &__our-services {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 2px;
+        background: #3d96f4;
+        border-radius: 50px;
+        padding: 16px 24px;
+    }
+
+    &__contact-us {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 2px;
+        color: #ffffff;
+        background: rgba(129, 129, 139, 0.2);
+        border-radius: 50px;
+        padding: 16px 31px;
+    }
+}
+//END OF COMMON STYLES
+
 //HEADER
 .header {
     &__conrainer {
@@ -98,7 +124,6 @@ body {
     &__logo {
         width: 148px;
         height: 40px;
-       
     }
 
     &__nav {
@@ -163,6 +188,7 @@ body {
         justify-content: center;
         align-items: center;
         grid-area: header__button;
+        padding-right: 5px;
     }
     &__button {
     }
@@ -201,6 +227,91 @@ body {
 .header__link {
 }
 
+//marketing
+.main {
+    &__marketing {
+        padding-top: 160px;
+        margin-bottom: 192px;
+    }
+}
+.marketing {
+    &__container {
+    }
+
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__description {
+        padding-right: 128px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 51.2px;
+        line-height: 120%;
+        color: #ffffff;
+        margin-bottom: 29px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 122px;
+            height: 122px;
+            top: -15%;
+            left: -5%;
+            background: url("../img/marketing/bg.svg") 0px 0px / contain no-repeat;
+        }
+    }
+
+    &__text {
+        margin-bottom: 33px;
+        font-size: 18px;
+        line-height: 150%;
+        color: #9c9c9c;
+    }
+
+    &__links {
+        display: flex;
+        gap: 0 32px;
+    }
+
+    &__photos {
+        flex: 0 0 48%;
+        padding: 0 27px 0 54px;
+    }
+}
+
+.photos {
+    display: flex;
+    gap: 0 59px;
+    &__column-1,
+    &__column-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 32px 0;
+
+    }
+
+    &__oval-image {
+        overflow: hidden;
+        border-radius: 378px;
+    }
+
+    &__image-1 {
+        overflow: hidden;
+        border-radius: 241.906px 241.906px 0px 241.906px;
+    }
+
+    &__image-2 {
+        overflow: hidden;
+        border-radius: 241.906px 0px 241.906px 241.906px;
+    }
+}
+
+//footer
 .footer {
 }
 
