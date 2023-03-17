@@ -17,9 +17,11 @@ body {
 .header {
     position: fixed;
     width: 100%;
+    z-index: 9999 ;
 }
 .main {
     flex: 1 1 auto;
+    z-index: 1;
 }
 .footer {
 }
@@ -106,9 +108,13 @@ body {
 .header {
     &__conrainer {
         position: relative;
+        
     }
 
     &__row {
+        background-color: #0D0D11;
+        overflow: hidden;
+        z-index: 5;
         color: #ffffff;
         display: grid;
         grid-template-columns: 1fr 2fr 0.5fr 0.5fr;

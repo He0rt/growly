@@ -171,12 +171,14 @@ body {
 .header {
   position: fixed;
   width: 100%;
+  z-index: 9999;
 }
 
 .main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  z-index: 1;
 }
 
 [class*=__container] {
@@ -263,6 +265,9 @@ body {
   position: relative;
 }
 .header__row {
+  background-color: #0D0D11;
+  overflow: hidden;
+  z-index: 5;
   color: #ffffff;
   display: -ms-grid;
   display: grid;
