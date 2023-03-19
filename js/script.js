@@ -1,10 +1,33 @@
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.slider-companies').slick({
         slidesToShow: 5,
         autoplay: true,
+        responsive: [
+            {
+                breakpoint: 980,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 479,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '70px'
+                }
+            }
+
+        ]
     });
-  });
+});
 
 let popUp = document.querySelector(".header__pop-up");
 let burgerMenu = document.querySelector(".header__burger");
@@ -22,7 +45,7 @@ burgerMenu.addEventListener("click", () => {
     cross.classList.remove("display-none");
 });
 
-cross.addEventListener('click', ()=>{
+cross.addEventListener('click', () => {
     cross.classList.add("display-none");
     popUp.classList.add("display-none");
     burgerMenu.classList.remove("display-none");
