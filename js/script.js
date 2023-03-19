@@ -2,6 +2,7 @@
 $(document).ready(function(){
     $('.slider-companies').slick({
         slidesToShow: 5,
+        autoplay: true,
     });
   });
 
