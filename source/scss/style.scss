@@ -545,22 +545,32 @@ body {
 .why-choose-us__decoration {
     display: flex;
     flex: 1 0 50%;
-    padding-right: 62px;
+    padding-right: 5px;
 }
 
 .why-choose-us__photho {
     flex: 0 1 75%;
-    max-height: 785.59px;
-
+    height: 785.59px;
+    width: 423px;
+    overflow: hidden;
     img {
+        object-fit: contain;
         width: 100%;
         height: 100%;
     }
 }
 
 .why-choose-us__photho_small {
+
     align-self: flex-end;
-    max-height: 181.44px;
+    width: 181px;
+    height: 181px;
+    img{
+        width: 181px;
+        height: 181px;
+        object-fit: contain;
+        object-position: 0 0 ;
+    }
 }
 
 .why-choose-us__body {
