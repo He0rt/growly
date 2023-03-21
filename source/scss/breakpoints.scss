@@ -1,7 +1,13 @@
 /*------------HEADER---------------*/
 
-@media (max-width: 1098.98px) {
 
+
+@media (max-width: 1098.98px) {
+    //common styles
+    .links {
+        flex-direction: column;
+        text-align: center;
+    }
     //marketing
     .marketing {
         &__description {
@@ -16,12 +22,6 @@
         &__links {
             gap: 10px 10px;
         }
-    }
-
-    //common styles
-    .links {
-        flex-direction: column;
-        text-align: center;
     }
 }
 
@@ -76,6 +76,15 @@
     .why-choose-us__photho_small{
         display: none;
     }
+    //statistics
+    .statistics{
+        &__decoration{
+            flex: 0 0 20%;
+        }
+        &__columns{
+            flex: 0 0 35%;
+        }
+}
 }
 
 @media (max-width: 767.98px) {
@@ -117,7 +126,7 @@
             gap: 50px 0;
         }
     }
-        //why choose us
+    //why choose us
         .why-choose-us{
             &__decoration{
                 display: none;
@@ -126,8 +135,28 @@
                 font-size: 1.5rem;
             }
         }
+    //statistics
+    .statistics{
+        &__container{
+            margin-bottom: 50px;
+        }
+        &__row{
+            gap: 32px;
+        }
+        &__decoration{
+            display: none;
+        }
+        &__columns{
+            flex: 0 0 50%;
+        }
+        &__column{
+                margin-right: 0;
+                
+            }
+        }
+    }
 
-}
+    
 
 @media (max-width: 479.98px) {
 
@@ -176,6 +205,20 @@
 
         &__description {
             display: none;
+        }
+    }
+    //statistics
+    .statistics{
+        &__row{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        &__columns{
+            flex: 1 1 100%;
+            &:not(:last-child){
+                margin-bottom: 32px;
+            }
         }
     }
 }

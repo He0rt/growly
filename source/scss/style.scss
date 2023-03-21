@@ -553,6 +553,7 @@ body {
     height: 785.59px;
     width: 423px;
     overflow: hidden;
+
     img {
         object-fit: contain;
         width: 100%;
@@ -565,11 +566,12 @@ body {
     align-self: flex-end;
     width: 181px;
     height: 181px;
-    img{
+
+    img {
         width: 181px;
         height: 181px;
         object-fit: contain;
-        object-position: 0 0 ;
+        object-position: 0 0;
     }
 }
 
@@ -605,6 +607,7 @@ body {
     color: #9C9C9C;
     position: relative;
     padding-left: 52px;
+
     &:not(:last-child) {
         margin-bottom: 21px;
     }
@@ -616,7 +619,58 @@ body {
         height: 100%;
         top: 0%;
         left: 0%;
-        background : url('../img/why-choose-us/marker.svg') 0px 0px/contain no-repeat;
+        background: url('../img/why-choose-us/marker.svg') 0px 0px/contain no-repeat;
+    }
+}
+
+//statistics
+.statistics {}
+
+.statistics__container {
+    margin-bottom: 192px;
+}
+
+.statistics__row {
+    display: flex;
+    align-items: center;
+}
+
+.statistics__columns {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 65%;
+}
+
+.statistics__column {
+    padding: 44px 40px 0 40px;
+    background: rgba(129, 129, 139, 0.1);
+    border-radius: 30px;
+    margin-right: 32px;
+    &:not(:last-child){
+    margin-bottom: 32px;
+    }
+}
+
+.counter {
+    font-weight: 500;
+    font-size: 51.2px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 27px;
+    color: #9C9C9C;
+    margin-bottom: 40px;
+}
+
+.statistics__decoration {
+    flex: 0 0 35%;
+    max-width:  499px;
+    img{
+        height: 100%;
     }
 }
 
