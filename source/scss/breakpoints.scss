@@ -78,11 +78,16 @@
     }
     //statistics
     .statistics{
+        &__row{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         &__decoration{
-            flex: 0 0 20%;
+            flex: 0 0 100%;
+            padding-top: 32gitpx;
         }
         &__columns{
-            flex: 0 0 35%;
+            flex: 0 0 50%;
         }
 }
 }
