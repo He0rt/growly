@@ -53,7 +53,6 @@
             position: absolute;
             top: 0%;
             left: 1.5%;
-            font-size: 1.5rem;
         }
 
         &__button {
@@ -122,6 +121,7 @@
     .title {
         top: -5%;
         left: 0;
+        font-size: 1.5rem;
     }
 
     //HEADER
@@ -161,8 +161,6 @@
         &__decoration {
             display: none;
         }
-
-        &__title,
         &__subtitle {
             font-size: 1.5rem;
         }
@@ -286,6 +284,9 @@
 .blog{
     .blog__container{
         margin-bottom: 35px;
+    }
+    .blog__subtitle{
+        font-size: 1.5rem;
     }
     .blog__columns{
         gap: 15px;

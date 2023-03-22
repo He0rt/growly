@@ -676,7 +676,123 @@ body {
     }
 }
 
-//review
+//reviews
+.main__reviews {}
+
+.reviews {}
+
+.reviews__container {
+    margin-bottom: 192px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.reviews__heading {
+    position: relative;
+}
+
+.reviews__title {
+    font-size: 10.8px;
+    line-height: 160%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #9C9C9C;
+    margin-bottom: 25px;
+}
+
+.title {}
+
+.reviews__subtitle {
+    font-weight: 500;
+    font-size: 51.2px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.reviews__text {
+    font-size: 18px;
+    line-height: 150%;
+    color: #9C9C9C;
+    max-width: 737px;
+}
+
+.reviews__button {
+    display: inline-block;
+    position: absolute;
+    width: 170px;
+    height: 52px;
+    bottom: 0%;
+    right: 0%;
+}
+
+.button {}
+
+.reviews__body {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.reviews__column {
+    flex: 0 1 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 64px 40px;
+    background: rgba(129, 129, 139, 0.1);
+    border-radius: 30px;
+}
+
+.reviews__row {
+    display: flex;
+    margin-bottom: 33px;
+}
+
+.reviews__photo {
+    width: 70px;
+    height: 70px;
+    margin-right: 16px;
+    border-radius: 0px 68.0312px 68.0312px 68.0312px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.reviews__author {}
+
+.reviews__name {
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 7px;
+}
+
+.reviews__company {
+    font-size: 14px;
+    line-height: 160%;
+    color: #9C9C9C;
+}
+
+.reviews__comment {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 34px;
+}
+
+.reviews__description {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #9C9C9C;
+}
+
+.reviews__grade {}
 
 //blog
 .main__blog {}
@@ -744,13 +860,15 @@ body {
     overflow: hidden;
 
 }
-.blog__info{
+
+.blog__info {
     padding: 0 29px 0 26px;
 }
+
 .blog__image {
     width: 100%;
     margin-bottom: 36px;
-    
+
     img {
         width: 100%;
         object-fit: cover;
