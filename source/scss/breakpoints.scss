@@ -97,14 +97,23 @@
             flex: 0 1 50%;
         }
     }
+
     //reviews
+    .reviews {
+        .reviews__button {
+            position: static;
+            margin-left: 0.5%;
+            margin-top: 15px;
+        }
+    }
 
     //blog
-    .blog{
-        .blog__text{
+    .blog {
+        .blog__text {
             padding-right: 10px;
         }
-        .blog__button{
+
+        .blog__button {
             position: static;
             margin-left: 0.5%;
             margin-top: 15px;
@@ -112,7 +121,20 @@
     }
 
 }
-
+@media(max-width:895px){
+    .reviews{
+        .reviews__body{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .reviews__column{
+            flex: 0 1 46%;
+        }
+        .reviews__button{
+            width: 100%;
+        }
+    }
+}
 @media (max-width: 767.98px) {
     body {
         font-size: 16px;
@@ -161,6 +183,7 @@
         &__decoration {
             display: none;
         }
+
         &__subtitle {
             font-size: 1.5rem;
         }
@@ -202,10 +225,11 @@
             flex: 0 1 45%;
             justify-content: center;
         }
-            .blog__button{
-                width: 100%;
-                margin-left: 0;
-            }
+
+        .blog__button {
+            width: 100%;
+            margin-left: 0;
+        }
     }
 }
 
@@ -278,25 +302,30 @@
             }
         }
     }
-//review
 
-//blog
-.blog{
-    .blog__container{
-        margin-bottom: 35px;
+    //review
+
+    //blog
+    .blog {
+        .blog__container {
+            margin-bottom: 35px;
+        }
+
+        .blog__subtitle {
+            font-size: 1.5rem;
+        }
+
+        .blog__columns {
+            gap: 15px;
+        }
+
+        .blog__body {
+            gap: 15px;
+        }
+
+        .blog__column {
+            flex: 0 1 100%;
+        }
     }
-    .blog__subtitle{
-        font-size: 1.5rem;
-    }
-    .blog__columns{
-        gap: 15px;
-    }
-    .blog__body{
-        gap: 15px;
-    }
-    .blog__column{
-        flex: 0 1 100%;
-    }
-}
 
 }

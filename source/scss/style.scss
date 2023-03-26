@@ -792,7 +792,31 @@ body {
     color: #9C9C9C;
 }
 
-.reviews__grade {}
+.reviews__grade {
+    display: flex;
+    
+}
+
+.grade{
+    display: flex;
+    gap: 4px;
+}
+.grade__item{
+    width: 24px;
+    height: 22px;
+    margin: 0 -2px;
+    padding: 0 2px;
+}
+
+.grade__item_standart{
+    background : url('../img/reviews/starGrey.svg') 0px 0px/contain no-repeat;
+}
+.grade__item_hover{
+    background : url('../img/reviews/starLightYellow.svg') 0px 0px/contain no-repeat;
+}
+.grade__item_active{
+    background : url('../img/reviews/starYellow.svg') 0px 0px/contain no-repeat;
+}
 
 //blog
 .main__blog {}
