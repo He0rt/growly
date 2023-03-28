@@ -1133,6 +1133,77 @@ body {
   margin-bottom: 40px;
 }
 
+.contact-us__container {
+  background: rgba(129, 129, 139, 0.1);
+  border-radius: 30px;
+  margin-bottom: 256px;
+}
+
+.contact-us__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-us__body {
+  max-width: 388px;
+  padding: 52px 12px;
+}
+
+.contact-us__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.contact-us__text {
+  font-size: 16px;
+  line-height: 150%;
+  color: #9C9C9C;
+  text-align: center;
+}
+
+.contact-us__buttons {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 55%;
+          flex: 0 1 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a.contact-us__button {
+  width: 170px;
+  margin-right: 32px;
+}
+a.contact-us__button:hover {
+  text-decoration: underline;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+button.contact-us__pop-up {
+  background: rgba(129, 129, 139, 0.2);
+}
+
 /*-------МЕДИАЗАПРОСЫ-------*/
 /*------------HEADER---------------*/
 @media (max-width: 1098.98px) {

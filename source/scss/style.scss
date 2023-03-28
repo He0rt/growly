@@ -794,28 +794,31 @@ body {
 
 .reviews__grade {
     display: flex;
-    
+
 }
 
-.grade{
+.grade {
     display: flex;
     gap: 4px;
 }
-.grade__item{
+
+.grade__item {
     width: 24px;
     height: 22px;
     margin: 0 -2px;
     padding: 0 2px;
 }
 
-.grade__item_standart{
-    background : url('../img/reviews/starGrey.svg') 0px 0px/contain no-repeat;
+.grade__item_standart {
+    background: url('../img/reviews/starGrey.svg') 0px 0px/contain no-repeat;
 }
-.grade__item_hover{
-    background : url('../img/reviews/starLightYellow.svg') 0px 0px/contain no-repeat;
+
+.grade__item_hover {
+    background: url('../img/reviews/starLightYellow.svg') 0px 0px/contain no-repeat;
 }
-.grade__item_active{
-    background : url('../img/reviews/starYellow.svg') 0px 0px/contain no-repeat;
+
+.grade__item_active {
+    background: url('../img/reviews/starYellow.svg') 0px 0px/contain no-repeat;
 }
 
 //blog
@@ -928,6 +931,71 @@ body {
     color: #3D96F4;
     display: inline-block;
     margin-bottom: 40px;
+}
+
+//contact-us
+.main__contact-us {}
+
+.contact-us {}
+
+.contact-us__container {
+    background: rgba(129, 129, 139, 0.1);
+    border-radius: 30px;
+    margin-bottom: 256px;
+
+}
+
+.contact-us__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-us__body {
+    max-width: 388px;
+    padding: 52px 12px;
+}
+
+.contact-us__title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.contact-us__text {
+    font-size: 16px;
+    line-height: 150%;
+    color: #9C9C9C;
+    text-align: center;
+}
+
+.contact-us__buttons {
+    flex: 0 1 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.contact-us__button {
+    width: 170px;
+    margin-right: 32px;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.button {
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+button.contact-us__pop-up {
+    background: rgba(129, 129, 139, 0.2);
 }
 
 //footer
