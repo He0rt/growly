@@ -1320,6 +1320,9 @@ button.contact-us__pop-up {
   .reviews .reviews__button {
     width: 100%;
   }
+  .contact-us .contact-us__buttons {
+    padding-bottom: 55px;
+  }
 }
 @media (max-width: 767.98px) {
   body {
