@@ -48,7 +48,7 @@ body {
         height: 100%;
         top: 0%;
         left: 0%;
-        background: url("../img/header/logo.svg") 0px 0px / cover no-repeat;
+        background: url("../img/logo.svg") 0px 0px / cover no-repeat;
     }
 }
 
@@ -939,17 +939,16 @@ body {
 .contact-us {}
 
 .contact-us__container {
-    background: rgba(129, 129, 139, 0.1);
-    border-radius: 30px;
-    margin-bottom: 256px;
-
+ 
 }
 
 .contact-us__row {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+    background: rgba(129, 129, 139, 0.1);
+    border-radius: 30px;
 }
 
 .contact-us__body {
@@ -974,7 +973,6 @@ body {
 }
 
 .contact-us__buttons {
-    flex: 0 1 55%;
     display: flex;
     justify-content: center;
     align-items: center;

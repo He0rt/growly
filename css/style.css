@@ -199,7 +199,7 @@ body {
   height: 100%;
   top: 0%;
   left: 0%;
-  background: url("../img/header/logo.svg") 0px 0px/cover no-repeat;
+  background: url("../img/logo.svg") 0px 0px/cover no-repeat;
 }
 
 .cart {
@@ -1133,23 +1133,19 @@ body {
   margin-bottom: 40px;
 }
 
-.contact-us__container {
-  background: rgba(129, 129, 139, 0.1);
-  border-radius: 30px;
-  margin-bottom: 256px;
-}
-
 .contact-us__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background: rgba(129, 129, 139, 0.1);
+  border-radius: 30px;
 }
 
 .contact-us__body {
@@ -1174,9 +1170,6 @@ body {
 }
 
 .contact-us__buttons {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 55%;
-          flex: 0 1 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1320,9 +1313,6 @@ button.contact-us__pop-up {
   .reviews .reviews__button {
     width: 100%;
   }
-  .contact-us .contact-us__buttons {
-    padding-bottom: 55px;
-  }
 }
 @media (max-width: 767.98px) {
   body {
@@ -1397,6 +1387,30 @@ button.contact-us__pop-up {
   .blog .blog__button {
     width: 100%;
     margin-left: 0;
+  }
+  .contact-us .contact-us__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .contact-us .contact-us__buttons .button {
+    margin: 0;
+  }
+  .contact-us .contact-us__buttons .contact-us__pop-up, .contact-us .contact-us__buttons .contact-us__button {
+    width: 100%;
+  }
+  .contact-us .contact-us__buttons .contact-us__pop-up:not(:last-child), .contact-us .contact-us__buttons .contact-us__button:not(:last-child) {
+    margin-bottom: 20px;
   }
   .header__logo-container {
     -ms-grid-row: 1;
