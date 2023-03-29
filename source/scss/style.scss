@@ -39,7 +39,7 @@ body {
 .logo {
     display: block;
     position: relative;
-
+    color: #000071;
     &::after {
         content: "";
         display: block;
@@ -939,7 +939,7 @@ body {
 .contact-us {}
 
 .contact-us__container {
- 
+margin-bottom: 256px;
 }
 
 .contact-us__row {
@@ -976,6 +976,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 52px 12px;
 }
 
 a.contact-us__button {

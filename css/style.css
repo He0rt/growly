@@ -190,6 +190,7 @@ body {
 .logo {
   display: block;
   position: relative;
+  color: #000071;
 }
 .logo::after {
   content: "";
@@ -1133,6 +1134,10 @@ body {
   margin-bottom: 40px;
 }
 
+.contact-us__container {
+  margin-bottom: 256px;
+}
+
 .contact-us__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1179,6 +1184,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 52px 12px;
 }
 
 a.contact-us__button {
@@ -1296,6 +1302,9 @@ button.contact-us__pop-up {
     margin-left: 0.5%;
     margin-top: 15px;
   }
+  .contact-us .contact-us__container {
+    margin-bottom: 192px;
+  }
 }
 @media (max-width: 895px) {
   .reviews .reviews__body {
@@ -1312,6 +1321,9 @@ button.contact-us__pop-up {
   }
   .reviews .reviews__button {
     width: 100%;
+  }
+  .contact-us .contact-us__container {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 767.98px) {
@@ -1372,6 +1384,9 @@ button.contact-us__pop-up {
   .statistics__column {
     margin-right: 0;
   }
+  .blog .blog__container {
+    margin-bottom: 35px;
+  }
   .blog .blog__body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1410,7 +1425,7 @@ button.contact-us__pop-up {
     width: 100%;
   }
   .contact-us .contact-us__buttons .contact-us__pop-up:not(:last-child), .contact-us .contact-us__buttons .contact-us__button:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .header__logo-container {
     -ms-grid-row: 1;
@@ -1482,9 +1497,6 @@ button.contact-us__pop-up {
   }
   .statistics__columns:not(:last-child) {
     margin-bottom: 32px;
-  }
-  .blog .blog__container {
-    margin-bottom: 35px;
   }
   .blog .blog__subtitle {
     font-size: 1.5rem;
